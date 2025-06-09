@@ -84,7 +84,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     console.log('Payload for Melhor Envio:', JSON.stringify(payload, null, 2));
 
-    const endpoint = 'https://sandbox.melhorenvio.com.br/api/v2/me/shipment/calculate';
+    const endpoint = 'https://melhorenvio.com.br/api/v2/me/shipment/calculate';
 
     const response = await fetch(endpoint, {
       method: 'POST',
