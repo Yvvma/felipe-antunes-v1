@@ -1,8 +1,8 @@
 import type { APIRoute } from 'astro';
 
 // Environment variables
-const ORIGIN_POSTAL_CODE = import.meta.env.ORIGIN_POSTAL_CODE || "12904290";
-const MELHOR_ENVIO_TOKEN = import.meta.env.MELHOR_ENVIO_TOKEN;
+const ORIGIN_POSTAL_CODE = process.env.ORIGIN_POSTAL_CODE || "12904290";
+const MELHOR_ENVIO_TOKEN = process.env.MELHOR_ENVIO_TOKEN;
 
 export const POST: APIRoute = async ({ request }) => {
   console.log('Origin postal code:', ORIGIN_POSTAL_CODE);
