@@ -18,3 +18,5 @@ dist/
 # OS-specific
 .DS_Store
 Thumbs.db
+
+vercel.json
