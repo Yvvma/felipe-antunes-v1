@@ -14,11 +14,6 @@ pnpm-debug.log*
 
 # Build output (optional, depending on framework)
 dist/
-.build/
-out/
-.next/
-astro.config.mjs.ts
-.cache/
 
 # OS-specific
 .DS_Store
