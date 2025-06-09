@@ -1,0 +1,30 @@
+{
+  "name": "eccentric-ephemera",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.7",
+    "@mercadopago/sdk-react": "^1.0.3",
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "astro": "^5.7.14",
+    "axios": "^1.9.0",
+    "correios-brasil": "^3.0.6",
+    "embla-carousel-react": "^8.6.0",
+    "framer-motion": "^12.7.4",
+    "lucide-react": "^0.511.0",
+    "mercadopago": "^2.7.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "swiper": "^11.2.7",
+    "tailwindcss": "^4.1.4"
+  }
+}

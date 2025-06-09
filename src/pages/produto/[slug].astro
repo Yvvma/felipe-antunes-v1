@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProductWrapper from "../../components/produtos/ProductWrapper";
+import { Products } from "../../data/Products";
+
+export async function getStaticPaths() {
+  return Products.map(product => ({
+    params: { slug: product.slug }
+  }));
+}
+
+const { slug } = Astro.params;
+const product = Products.find(p => p.slug === slug);
+---
+
+<Layout title={product?.name ?? "Produto"}>
+  <div class="w-full flex flex-col items-center justify-center min-h-screen px-4 bg-black">
+    {product ? (
+      <ProductWrapper product={product} client:load />
+    ) : (
+      <div class="text-white p-8 text-center">Produto não encontrado</div>
+    )}
+  </div>
+</Layout>
+
+

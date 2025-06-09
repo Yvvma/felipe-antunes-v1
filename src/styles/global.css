@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-inter: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: 'FrutigerBlack';
+    src: url('https://res.cloudinary.com/dsjzz8uu0/raw/upload/v1748862947/FrutigerNeueLTW1G-Black_b1dto5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'FrutigerBold';
+    src: url('https://res.cloudinary.com/dsjzz8uu0/raw/upload/v1748862949/FrutigerNeueLTW1G-Bold_hxs8f7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FrutigerRegular';
+    src: url('https://res.cloudinary.com/dsjzz8uu0/raw/upload/v1748862959/FrutigerNeueLTW1G-Regular_cg2f3q.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FrutigerThin';
+    src: url('https://res.cloudinary.com/dsjzz8uu0/raw/upload/v1748862963/FrutigerNeueLTW1G-Thin_v3vbni.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+   @font-face {
+    font-family: 'FrutigerLight';
+    src: url('https://res.cloudinary.com/dsjzz8uu0/raw/upload/v1748862963/FrutigerNeueLTW1G-Thin_v3vbni.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

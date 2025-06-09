@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro'
+import CheckoutWithCartProvider from '../components/produtos/CheckoutWithCart';
+
+interface Cardholder {
+  email: string;
+  identification: string;
+}
+
+interface OnSubmitParams {
+  token: string;
+  paymentMethodId: string;
+  issuerId: string;
+  cardholder: Cardholder;
+}
+---
+
+<Layout title="Checkout">
+  <div class="w-full h-full overflow-x-hidden flex flex-col items-center justify-center bg-black">
+    <div class="mt-40 mb-40 pl-8 pr-8">
+      <CheckoutWithCartProvider client:load />
+    </div>
+
+    <!-- 🔹 Container obrigatório para o Brick -->
+    <div id="cardBrickContainer" class="w-full max-w-md mx-auto mt-8"></div>
+  </div>
+
+  
+ 
+</Layout>

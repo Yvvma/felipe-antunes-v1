@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TitleComponent from '../components/UI/TitleComponent';
+import LojaWrapper from '../components/Loja/LojaWrapper';
+
+const currentPath = Astro.url.pathname;
+---
+
+<Layout title="Loja">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+  <div class="w-full h-full overflow-hidden flex flex-col items-center justify-center">
+    <!-- Hero Section -->
+    <div
+      class="relative w-full h-[600px] sm:h-[100vh] bg-cover bg-center overflow-hidden"
+      style="background-image: url('https://res.cloudinary.com/dsjzz8uu0/image/upload/v1748864510/Felipe_Antunes_15_-_Creditos_-_Esher_Torres-min_ishgob.jpg');"
+    >
+      <div class="absolute bottom-0 left-0 right-0 h-80 bg-gradient-to-t from-black to-transparent z-10"></div>
+      <div class="absolute bottom-0 left-0 w-full z-30 pb-8">
+        <TitleComponent title="Loja" currentPath={currentPath} client:load />
+      </div>
+      <div class="relative w-full h-full flex flex-col justify-end items-end z-30"></div>
+    </div>
+
+    <LojaWrapper currentPath={currentPath} client:load />
+  </div>
+</Layout>

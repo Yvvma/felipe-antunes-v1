@@ -1,0 +1,41 @@
+---
+import HeaderComponent from "../components/UI/Header"
+import FooterComponent from "../components/UI/Footer"
+import "../styles/global.css"; 
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="8x32"
+      href="https://res.cloudinary.com/dsjzz8uu0/image/upload/v1748879561/favicon-felipe-antunes_jk3doo.png"
+    />
+	<link rel="stylesheet" href="src/styles/global.css">
+    <meta name="generator" content={Astro.generator} />
+    <title>{Astro.props.title}</title>
+  </head>
+  <body>
+    <HeaderComponent client:load/>
+		
+      <main>
+        <slot />
+      </main>
+    
+    <FooterComponent client:load />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+</style>
