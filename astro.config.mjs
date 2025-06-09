@@ -15,14 +15,12 @@ export default defineConfig({
 
   vite: {
     ssr: {
-      noExternal: [
-        '@stripe/stripe-js',
-        'stripe'
-      ]
+      noExternal: []
     },
     define: {
-      'import.meta.env.PUBLIC_STRIPE_PUBLISHABLE_KEY': JSON.stringify(process.env.PUBLIC_MP_PUBLIC_KEY),
-      'process.env.STRIPE_SECRET_KEY': JSON.stringify(process.env.MP_ACCESS_TOKEN),
+      // Define variáveis do Mercado Pago para o frontend
+      'import.meta.env.PUBLIC_MP_PUBLIC_KEY': JSON.stringify(process.env.PUBLIC_MP_PUBLIC_KEY),
+      'process.env.MP_ACCESS_TOKEN': JSON.stringify(process.env.MP_ACCESS_TOKEN),
     }
   },
 
