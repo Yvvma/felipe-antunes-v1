@@ -34,6 +34,18 @@ export const Products = [
   },
   {
     id: "4",
+    name: "Álbum Livro Visão Noturna",
+    price: 0.99,
+    image: "https://res.cloudinary.com/dmgypxge0/image/upload/v1749454344/visao-noturna_ylpprk.webp",
+    slug: "livro-lamina",
+    width: 15,
+    height: 2,
+    length: 21,
+    weight: 0.3,
+  },
+
+  {
+    id: "5",
     name: "Lâmina K7",
     price: 0.99,
     image: "https://res.cloudinary.com/dsjzz8uu0/image/upload/v1749364255/kru-k7_zdyxgj.avif",
