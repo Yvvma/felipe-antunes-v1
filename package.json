@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.7",
+    "@astrojs/vercel": "^8.1.5",
     "@mercadopago/sdk-react": "^1.0.3",
     "@tailwindcss/vite": "^4.1.4",
     "@types/react": "^19.1.2",
